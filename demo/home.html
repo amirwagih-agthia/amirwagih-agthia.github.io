@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-high": "#ece8df",
+                      "surface-container-highest": "#e6e2d9",
+                      "outline": "#767683",
+                      "on-tertiary-fixed": "#2e1500",
+                      "on-secondary-fixed": "#410002",
+                      "surface-container-lowest": "#ffffff",
+                      "on-secondary": "#ffffff",
+                      "surface-variant": "#e6e2d9",
+                      "primary": "#141779",
+                      "on-secondary-container": "#fffbff",
+                      "on-primary-fixed-variant": "#363b98",
+                      "primary-fixed-dim": "#bfc2ff",
+                      "background": "#fdf9f0",
+                      "surface": "#fdf9f0",
+                      "on-tertiary-container": "#d79d6a",
+                      "secondary-fixed-dim": "#ffb4ab",
+                      "on-tertiary": "#ffffff",
+                      "on-surface-variant": "#464652",
+                      "surface-container-low": "#f7f3ea",
+                      "tertiary-container": "#5c3409",
+                      "surface-bright": "#fdf9f0",
+                      "on-primary": "#ffffff",
+                      "surface-container": "#f1eee5",
+                      "primary-container": "#2d328f",
+                      "on-background": "#1c1c17",
+                      "tertiary-fixed": "#ffdcc1",
+                      "surface-tint": "#4f54b1",
+                      "secondary-fixed": "#ffdad6",
+                      "error-container": "#ffdad6",
+                      "surface-dim": "#dddad1",
+                      "secondary-container": "#e71520",
+                      "tertiary-fixed-dim": "#f8ba84",
+                      "on-primary-fixed": "#01006e",
+                      "on-error": "#ffffff",
+                      "on-secondary-fixed-variant": "#93000d",
+                      "outline-variant": "#c7c5d4",
+                      "inverse-surface": "#31312b",
+                      "on-surface": "#1c1c17",
+                      "tertiary": "#402000",
+                      "error": "#ba1a1a",
+                      "on-error-container": "#93000a",
+                      "inverse-on-surface": "#f4f0e7",
+                      "inverse-primary": "#bfc2ff",
+                      "on-primary-container": "#9ba1ff",
+                      "primary-fixed": "#e0e0ff",
+                      "secondary": "#bb0013",
+                      "on-tertiary-fixed-variant": "#673d12"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "k2d": ["K2D", "sans-serif"],
+                      "headline": ["K2D", "sans-serif"],
+                      "body": ["K2D", "sans-serif"],
+                      "label": ["K2D", "sans-serif"]
+              }
+            },
+          }
+        }
+      </script>
+<style>
+        body { font-family: 'K2D', sans-serif; background-color: #fdf9f0; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .editorial-shadow { box-shadow: 0 12px 24px rgba(28, 28, 23, 0.06); }
+        .glass-nav { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="text-tertiary selection:bg-secondary/20">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#FDF9F0]/80 dark:bg-[#402000]/80 glass-nav">
+<div class="max-w-7xl mx-auto px-8 flex justify-between items-center h-20">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-3xl text-primary" data-icon="bakery_dining">bakery_dining</span>
+<span class="text-2xl font-black tracking-tighter text-[#141779] dark:text-white">Alfaysal</span>
+</div>
+<nav class="hidden md:flex items-center gap-10 font-k2d text-sm font-bold tracking-widest uppercase">
+<a class="text-[#402000] dark:text-[#FDF9F0]/80 hover:text-[#141779] transition-colors hover:scale-105 transition-transform duration-300" href="#">Products</a>
+<a class="text-[#402000] dark:text-[#FDF9F0]/80 hover:text-[#141779] transition-colors hover:scale-105 transition-transform duration-300" href="#">Our Story</a>
+<a class="text-[#402000] dark:text-[#FDF9F0]/80 hover:text-[#141779] transition-colors hover:scale-105 transition-transform duration-300" href="#">Wholesale</a>
+<a class="text-[#402000] dark:text-[#FDF9F0]/80 hover:text-[#141779] transition-colors hover:scale-105 transition-transform duration-300" href="#">Contact</a>
+</nav>
+<button class="bg-primary text-white px-8 py-2.5 rounded-full font-bold text-sm tracking-widest uppercase hover:scale-105 active:scale-95 transition-all shadow-md">
+                Contact
+            </button>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[795px] flex items-center overflow-hidden bg-surface">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
+<div class="lg:col-span-6 z-10 space-y-8">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary-container/10 border border-secondary/10">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="text-secondary font-bold text-xs uppercase tracking-widest">Freshly Baked Daily</span>
+</div>
+<h1 class="text-7xl lg:text-8xl font-black text-primary leading-[0.9] tracking-tighter">
+                        Artisanal <br/>
+<span class="text-secondary">Heritage.</span>
+</h1>
+<p class="text-xl text-tertiary/80 leading-relaxed max-w-lg font-medium">
+                        Crafting tradition since 1954. Experience the golden crunch of our signature snacks and the soft embrace of heritage-recipe breads.
+                    </p>
+<div class="flex flex-wrap gap-6 pt-4">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-full font-bold text-lg hover:scale-105 active:scale-95 transition-all editorial-shadow flex items-center gap-3">
+                            Explore Our Products
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="bg-surface-container-highest text-primary px-10 py-4 rounded-full font-bold text-lg hover:scale-105 active:scale-95 transition-all flex items-center gap-3">
+                            Our Story
+                        </button>
+</div>
+</div>
+<div class="lg:col-span-6 relative h-[600px] flex items-center justify-center">
+<div class="absolute inset-0 bg-surface-container-low rounded-[4rem] rotate-3 scale-95"></div>
+<div class="relative w-full h-[550px] rounded-[3rem] overflow-hidden editorial-shadow group">
+<img alt="Artisanal Bread" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Close-up of freshly baked golden sourdough bread with a flour-dusted crust on a warm wooden table in a sunlit bakery" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcVbOS9cqiU9b1U9NeJyiTjBstbEND2mRdqFq_MOfXeUnaPEGjO1XJPMreA9WM9CKEBrKwrSgGRG0G_yxtrHUFmidYNyi65r3Kl_AFYRk6sbYMVBMuYjvqEbuH7_kLxcO6Z2JdhX5uy2yCzkrL7FfjH-bcn-zZ5KTd5iZOX3CU3N8ALgFyZbAAQyDIGEMFdNQtKcgWn6vDbjqM8Njj6u3OQg4dpPKqPaUln1B3n_8djvAiA51NuL-Bn2-H72PIWXhcP4S4TFKggWs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
+<div class="absolute bottom-8 left-8 right-8 p-6 glass-nav bg-white/20 rounded-2xl border border-white/30">
+<div class="flex justify-between items-center text-white">
+<div>
+<p class="text-xs uppercase tracking-widest font-bold opacity-80">Featured Choice</p>
+<h3 class="text-2xl font-bold">Classic Sourdough</h3>
+</div>
+<span class="material-symbols-outlined text-4xl">bakery_dining</span>
+</div>
+</div>
+</div>
+<!-- Small Floating Element -->
+<div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-3xl editorial-shadow animate-bounce">
+<img alt="Alfaysal Logo" class="h-12 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApvPhufELlc013bGV8eu79y7ozHwXfD62XGF8BO1QEHs92xr_xQ3F_HcRwZ2rhYtDp7suTyyK9LrcAo734qsxdqBm6pi6KrlnXOlH8HLB5X-Ugt_mPmfTAFY3GMy_hK5bdqNTR16LL3Ka27u6XXEh1TbApxPWL96wkWFgST9kXpLihqEDqxvP2MmrtCibUlAjUhyqHFr87Im662H6_7iTvuikLj3_pXRmrm5dtHhPTqaexi8Z2YZRC1oDKOByKq3AfpZO5mIrHJqA"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Feature Bento Grid -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div class="max-w-2xl">
+<h2 class="text-xs font-bold text-secondary uppercase tracking-[0.3em] mb-4">Curated Selection</h2>
+<h3 class="text-5xl font-black text-primary tracking-tighter">The Snack Collection</h3>
+</div>
+<button class="text-primary font-bold border-b-2 border-primary pb-1 hover:text-secondary hover:border-secondary transition-all">View All Products</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Large Feature Card -->
+<div class="md:col-span-8 bg-surface p-1 rounded-[2.5rem] editorial-shadow group overflow-hidden h-[500px] relative">
+<img alt="Savory Pastries" class="w-full h-full object-cover rounded-[2.4rem] group-hover:scale-105 transition-transform duration-500" data-alt="Elegant platter of savory Middle Eastern pastries and snacks arranged artistically on a neutral ceramic plate with warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQYxovJ2nvLgcKiUPnUZlavRtocfkp8OGf0Vy0Oqe3_7JYK7SNczzgcjuj6ocbV-28BoIi3TugQDMur3vm9Dt5aP3dBjZ8ysH_7mkVOT7VrZCtk0_-SGi7Po_7CzGphiXMB0-EyaqLqlFF2Atp6TUbeZBi-RhKx6W06OmKmKttIh-p3t0Ob6LuaWDWaOFsis9qtsmCejZLSuXlDdrc17YRYodzs4bFN8HbYdNzb95vAfjdzmi_AVVM9wt3gKGCjUq_iVSz97ebdgI"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/60 via-primary/20 to-transparent flex items-center p-12">
+<div class="max-w-xs text-white">
+<span class="bg-secondary px-3 py-1 rounded-md text-[10px] font-bold uppercase tracking-widest mb-4 inline-block">Best Seller</span>
+<h4 class="text-4xl font-bold mb-4">Traditional Savory Bites</h4>
+<p class="mb-8 opacity-90">Hand-pressed and seasoned with our secret blend of spices.</p>
+<button class="bg-white text-primary px-8 py-3 rounded-full font-bold hover:bg-secondary hover:text-white transition-colors">Shop Now</button>
+</div>
+</div>
+</div>
+<!-- Side Stack Card 1 -->
+<div class="md:col-span-4 bg-surface-container-highest rounded-[2.5rem] p-8 flex flex-col justify-between h-[500px]">
+<div>
+<span class="material-symbols-outlined text-5xl text-secondary mb-6" data-icon="cookie">cookie</span>
+<h4 class="text-3xl font-bold text-primary mb-4">Sweet Archives</h4>
+<p class="text-tertiary/70 leading-relaxed">Our heritage collection of date-filled cookies and honey-glazed treats.</p>
+</div>
+<div class="relative w-full aspect-square mt-8 rounded-2xl overflow-hidden">
+<img alt="Cookies" class="w-full h-full object-cover" data-alt="Close-up of golden brown butter cookies with visible texture and sugar crystals on a dark background with dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwy3hBeDo3kdLWz1P-Ci8swB-OnU7p-b-DDyQq_OImQDFy9PolHDBqxKQGu5vhDITxKdx2UR53hxyeOA2kb4EE1TSzlVB3NMK3gRtKcwXtB4Hkor9DGUogQZR8DcwCT4tkrVE3vWBWPGPeqb3qoMw0ZZY9xZNkX7DHyFY_verSaTrXhGoKZYMIukgwkYSsPT12r6h1fa0wQJogEE6XI32u-tzQ0KMWZFLxOUiqxHw-8Zdy6j2IOxpOt-lyx2_glct8Tz7ocNmiqjM"/>
+</div>
+</div>
+<!-- Bottom Row -->
+<div class="md:col-span-4 bg-primary text-white rounded-[2.5rem] p-10 flex flex-col justify-center gap-6">
+<h4 class="text-3xl font-bold leading-tight">Wholesale &amp; Catering</h4>
+<p class="opacity-80">Elevate your store or event with Alfaysal's premium artisanal range.</p>
+<a class="inline-flex items-center gap-2 font-bold hover:gap-4 transition-all" href="#">Get a Quote <span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+<div class="md:col-span-8 bg-surface rounded-[2.5rem] p-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center border border-outline-variant/10">
+<div class="space-y-4">
+<h4 class="text-2xl font-bold text-primary">Daily Freshness delivered to your door.</h4>
+<p class="text-tertiary/70">Join our subscription club for exclusive weekly artisanal bundles.</p>
+<div class="flex gap-2 bg-surface-container-low p-2 rounded-full border border-outline-variant/20">
+<input class="bg-transparent border-none focus:ring-0 px-4 w-full text-sm" placeholder="Email address" type="email"/>
+<button class="bg-secondary text-white px-6 py-2 rounded-full text-sm font-bold">Join</button>
+</div>
+</div>
+<div class="h-48 rounded-2xl overflow-hidden">
+<img alt="Bakery Interior" class="w-full h-full object-cover" data-alt="Interior of a modern warm bakery with wooden shelves filled with fresh loaves and soft warm pendant lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClgtrbNrRugNS5uWVkN2tNdPQHOpeNFxjGeMf370V69KAZ_br0pKu_m9DKfYYtwp-wtqgFmRntduU14TIwMMB04TXAQ-nXpnDpmPqr6YOkoPMdmJKqqKQdf5dMsqnSRCP-0-u2p54ZpfHVLwDpD1WOCkRxIsLycdXLhSmshx-AAt9NeIB9RLmpUq9ysUmR_ODTmcCtPDnLzo6iQpFyN7QA_YhQwTUTN31suPISg2D5MyIbVxkUtxQnEoFGZDWlMyaUVGzM0FPZres"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Story Teaser -->
+<section class="py-32 bg-surface relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="order-2 lg:order-1 relative">
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-secondary/5 rounded-full blur-3xl"></div>
+<img alt="Baker Crafting" class="rounded-[3rem] editorial-shadow w-full aspect-[4/5] object-cover" data-alt="Artisanal baker hands covered in flour kneading dough on a rustic wooden surface with warm atmospheric lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE4HuL6-w4DjV6Z3w7XU60JDJ3Q1nTY_2i3V0cH-bHn-PSV5XztyT2cxGaWFOVribIFQVKhLRaNfUzWCyTQQ3Zcw8lF4wtclWdW4KZXl-tCovzvp1jeTGfnpHUYmGHEghn6QMDILsh-ca9JB1irEMe1DX1VjEcc-QjYgQirzZg4zVEfxwjkcmmx6XMHo2nKiKHLIWyrcdG7CLCudJ0-aJ78HrOZaClejQMXVLEMfucrOhxQfLsC7jiRvsA4vvkiaUf6zXNC_lGNdk"/>
+</div>
+<div class="order-1 lg:order-2 space-y-10">
+<div class="space-y-4">
+<h2 class="text-xs font-bold text-secondary uppercase tracking-[0.3em]">Our Craft</h2>
+<h3 class="text-6xl font-black text-primary tracking-tighter leading-tight">The Art of No Compromise.</h3>
+</div>
+<p class="text-xl text-tertiary/80 leading-relaxed font-medium">
+                        For decades, we've remained faithful to the slow methods of our ancestors. No additives, no shortcuts—just flour, water, and time.
+                    </p>
+<div class="grid grid-cols-2 gap-8 py-4 border-y border-outline-variant/20">
+<div>
+<p class="text-4xl font-black text-primary">70+</p>
+<p class="text-sm font-bold text-tertiary/60 uppercase tracking-widest">Year History</p>
+</div>
+<div>
+<p class="text-4xl font-black text-primary">100%</p>
+<p class="text-sm font-bold text-tertiary/60 uppercase tracking-widest">Natural</p>
+</div>
+</div>
+<button class="group flex items-center gap-4 text-primary font-black text-xl">
+                        Read Our Full Story
+                        <span class="w-12 h-12 rounded-full border-2 border-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined">arrow_forward</span>
+</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#FDF9F0] dark:bg-[#402000] w-full rounded-t-[2rem]">
+<div class="max-w-7xl mx-auto px-8 py-16 grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="space-y-8">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-3xl text-primary" data-icon="bakery_dining">bakery_dining</span>
+<span class="text-xl font-bold text-[#141779]">Alfaysal</span>
+</div>
+<p class="font-k2d body-lg text-[#402000] dark:text-[#FDF9F0] max-w-sm">
+                    Preserving the soul of traditional baking while innovating for the modern palate. Every bite is a story of craft and passion.
+                </p>
+<div class="flex gap-6">
+<a class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary hover:bg-secondary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-xl">brand_awareness</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary hover:bg-secondary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="space-y-6">
+<h5 class="text-primary font-bold uppercase text-xs tracking-widest">Discover</h5>
+<ul class="space-y-4">
+<li><a class="text-[#402000]/70 dark:text-[#FDF9F0]/70 hover:text-[#BB0013] transition-colors font-k2d" href="#">The Archive</a></li>
+<li><a class="text-[#402000]/70 dark:text-[#FDF9F0]/70 hover:text-[#BB0013] transition-colors font-k2d" href="#">Our Craft</a></li>
+<li><a class="text-[#402000]/70 dark:text-[#FDF9F0]/70 hover:text-[#BB0013] transition-colors font-k2d" href="#">Stockists</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h5 class="text-primary font-bold uppercase text-xs tracking-widest">Connect</h5>
+<ul class="space-y-4">
+<li><a class="text-[#402000]/70 dark:text-[#FDF9F0]/70 hover:text-[#BB0013] transition-colors font-k2d" href="#">Contact Us</a></li>
+<li><a class="text-[#402000]/70 dark:text-[#FDF9F0]/70 hover:text-[#BB0013] transition-colors font-k2d" href="#">Wholesale</a></li>
+<li><a class="text-[#402000]/70 dark:text-[#FDF9F0]/70 hover:text-[#BB0013] transition-colors font-k2d" href="#">Privacy</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 pb-12">
+<div class="pt-8 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-sm text-[#402000]/70 dark:text-[#FDF9F0]/70 font-k2d italic">© 2024 Alfaysal Bakery. All Rights Reserved.</p>
+<div class="flex gap-8 text-xs font-bold text-primary/50 uppercase tracking-widest">
+<span>Est. 1954</span>
+<span>Handcrafted Daily</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

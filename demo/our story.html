@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#ece8df",
+                    "surface-container-highest": "#e6e2d9",
+                    "outline": "#767683",
+                    "on-tertiary-fixed": "#2e1500",
+                    "on-secondary-fixed": "#410002",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "surface-variant": "#e6e2d9",
+                    "primary": "#141779",
+                    "on-secondary-container": "#fffbff",
+                    "on-primary-fixed-variant": "#363b98",
+                    "primary-fixed-dim": "#bfc2ff",
+                    "background": "#fdf9f0",
+                    "surface": "#fdf9f0",
+                    "on-tertiary-container": "#d79d6a",
+                    "secondary-fixed-dim": "#ffb4ab",
+                    "on-tertiary": "#ffffff",
+                    "on-surface-variant": "#464652",
+                    "surface-container-low": "#f7f3ea",
+                    "tertiary-container": "#5c3409",
+                    "surface-bright": "#fdf9f0",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#f1eee5",
+                    "primary-container": "#2d328f",
+                    "on-background": "#1c1c17",
+                    "tertiary-fixed": "#ffdcc1",
+                    "surface-tint": "#4f54b1",
+                    "secondary-fixed": "#ffdad6",
+                    "error-container": "#ffdad6",
+                    "surface-dim": "#dddad1",
+                    "secondary-container": "#e71520",
+                    "tertiary-fixed-dim": "#f8ba84",
+                    "on-primary-fixed": "#01006e",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed-variant": "#93000d",
+                    "outline-variant": "#c7c5d4",
+                    "inverse-surface": "#31312b",
+                    "on-surface": "#1c1c17",
+                    "tertiary": "#402000",
+                    "error": "#ba1a1a",
+                    "on-error-container": "#93000a",
+                    "inverse-on-surface": "#f4f0e7",
+                    "inverse-primary": "#bfc2ff",
+                    "on-primary-container": "#9ba1ff",
+                    "primary-fixed": "#e0e0ff",
+                    "secondary": "#bb0013",
+                    "on-tertiary-fixed-variant": "#673d12"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "k2d": ["K2D", "sans-serif"],
+                    "headline": ["K2D", "sans-serif"],
+                    "body": ["K2D", "sans-serif"],
+                    "label": ["K2D", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'K2D', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 12px 24px rgba(28, 28, 23, 0.06);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface selection:bg-secondary/30">
+<header class="fixed top-0 w-full z-50 bg-[#FDF9F0]/80 backdrop-blur-xl">
+<nav class="max-w-7xl mx-auto px-8 flex justify-between items-center h-20">
+<div class="flex items-center gap-3 style_universal_hover cursor-pointer">
+<img alt="Alfaysal Logo" class="h-10 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBphnE-hyZdDvhq_4CmEFPlBq5NsnrvEjZxjOPSARGMCXMn0m1pkKhSUOEK-QK-1UaMAx97GKppY3E5SLwRGkyOGZFJoDqCW0tAFMiFz6_v2BMGd5xDl1GdSZ7vjiVj99sK5uXofuINtsQh4v6bAKic4zDcVjs9QfbvVAMy2vopv71mSFAG01W0RoWIxOS28i-LqfMkpCmGKdAnK2mEWcKP3fd2vbpA8Z9ODPdujDPr0Tz7Mevca_W6q6jqcN9MBXUoV8ad8wTeZL0"/>
+<span class="text-2xl font-black tracking-tighter text-[#141779] font-k2d">Alfaysal</span>
+</div>
+<div class="hidden md:flex gap-10">
+<a class="font-k2d text-sm font-bold tracking-widest uppercase text-[#402000] hover:text-[#141779] transition-colors" href="#">Our Craft</a>
+<a class="font-k2d text-sm font-bold tracking-widest uppercase text-[#BB0013] border-b-2 border-[#BB0013] pb-1" href="#">About Us</a>
+<a class="font-k2d text-sm font-bold tracking-widest uppercase text-[#402000] hover:text-[#141779] transition-colors" href="#">The Archive</a>
+</div>
+<button class="font-k2d text-sm font-bold tracking-widest uppercase text-[#141779] px-6 py-2 rounded-full border border-primary/20 hover:bg-primary hover:text-white transition-all">
+                Contact
+            </button>
+</nav>
+</header>
+<main class="pt-20">
+<section class="relative h-[707px] flex items-center overflow-hidden bg-surface">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
+<div class="space-y-8">
+<span class="font-k2d text-secondary font-bold tracking-[0.2em] uppercase text-sm block">Established Heritage</span>
+<h1 class="text-6xl md:text-8xl font-black text-primary leading-[0.9] -tracking-[0.04em]">
+                        Crafting <br/><span class="text-secondary">Moments</span> of Joy.
+                    </h1>
+<p class="text-xl text-tertiary max-w-md leading-relaxed">
+                        Alfaysal stands as a beacon of artisanal excellence in the snack industry, blending traditional craft with modern retail sophistication.
+                    </p>
+</div>
+<div class="relative">
+<div class="rounded-[2.5rem] overflow-hidden editorial-shadow transform rotate-2 aspect-[4/5] bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="close-up of golden brown artisan bread rolls in a rustic basket with warm morning light streaming through a bakery window" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-wDqHQWsjm7HCrojLcre4uqLdQBKM-q0NqgFjtYqkUOrmkth77fkXBKNvAaengJMisoP-sw76KUmzAI8JuMP2a6FGjN71RRQ4Uy58WivDwpOqrducL6QKag05L0mxvtiauzRdtvqacrt7_a7mFigLjV1KDAvGTN3qcsNSNo9vgzbS77tMAv17kZQ_ltbcPhC3gFg_vNDY0uhCTrgUZfO85JDx97ruVTNjHNnYZ8wA1OqfbJ_bWU67Fga15j6BMEwxXB9cs0W6gPs"/>
+</div>
+<div class="absolute -bottom-8 -left-8 w-48 h-48 rounded-full border-[12px] border-background overflow-hidden editorial-shadow hidden md:block">
+<img class="w-full h-full object-cover" data-alt="close-up of hands dusting flour over freshly kneaded dough on a dark wooden surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQCYcRRrgzxXTAclDw9g3yedOSe1S8aobL1f6jNG6rSN8xrRtsFo_CJjGr21lkmt6ZSasJHqOk_ZhSGMVgcPoetbP9ZB0q3gy9vRghQabYgw-6FB4xzSa8GwV31VerR9Hy_gk-zEH1kjgNdLcrljTbdT_5ua5PDtTL3lAgsGsRgOyJfdlH7MgzIzZ4rYTNck3RYe19zwbVfW0B7z7U4yMxle6YSFih7hLWqEZ4MoJSYU1SWtAH-Gij6gI9g-ceu8ZXXMEh7g1Fgjo"/>
+</div>
+</div>
+</div>
+<div class="absolute top-0 right-0 w-1/3 h-full bg-surface-container-low -z-0"></div>
+</section>
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="p-12 bg-surface rounded-[2rem] space-y-6 editorial-shadow">
+<div class="w-14 h-14 bg-primary-container rounded-2xl flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined text-3xl">star_half</span>
+</div>
+<h3 class="text-3xl font-black text-primary tracking-tight">Our Mission</h3>
+<p class="text-tertiary leading-relaxed">To elevate the everyday snacking experience through uncompromising quality and an unwavering commitment to the authentic craft of baking.</p>
+</div>
+<div class="p-12 bg-secondary-container rounded-[2rem] space-y-6 editorial-shadow text-white">
+<div class="w-14 h-14 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl">verified</span>
+</div>
+<h3 class="text-3xl font-black tracking-tight">Our Quality</h3>
+<p class="text-white/90 leading-relaxed">Every ingredient is curated. Every recipe is a legacy. We prioritize retail excellence to ensure our products reach you as fresh as the moment they were baked.</p>
+</div>
+<div class="p-12 bg-surface rounded-[2rem] space-y-6 editorial-shadow">
+<div class="w-14 h-14 bg-tertiary-container rounded-2xl flex items-center justify-center text-tertiary-fixed">
+<span class="material-symbols-outlined text-3xl">history_edu</span>
+</div>
+<h3 class="text-3xl font-black text-primary tracking-tight">The Archive</h3>
+<p class="text-tertiary leading-relaxed">A history built on flour and passion. We preserve the methods of the past while embracing the culinary innovations of the future.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row gap-20 items-center">
+<div class="w-full md:w-1/2 grid grid-cols-2 gap-6">
+<div class="space-y-6 pt-12">
+<div class="rounded-3xl overflow-hidden aspect-square">
+<img class="w-full h-full object-cover" data-alt="warm inviting scene of a baker in a white apron placing a tray of golden cookies onto a shelf" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVAaJjU-mxFq1GnwFf7YgkmOlz1HpQADtG-j3AjByLg6vTqclAyHjSm3CNOxMQKWeZPp6GIFmhzjLQosIedOhfkRqRiBl1d_iiLkAF4rN-n8YS7kQ28fRZJ3uxpMGzgvDTR6TC36x17ozdJuF8RNus13IBA2igsFz4YLRoC1NofT0J85Hr0j_ezxHftzN76EGt43YjfOpQAXZGJ9ywr-wvO98nw0D66bYawiWV81obcgrZxbe5LqtLBPeHb6uDlS-O4BK451t4Z9o"/>
+</div>
+<div class="rounded-3xl overflow-hidden aspect-[3/4]">
+<img class="w-full h-full object-cover" data-alt="atmospheric photo of various rustic pastries arranged on a tiered wooden display with soft overhead lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtb5yVRRpRs34Q33MNs3orUSt338g-Va4la8teXqeAhVo8z-SQjrc5Dm5R6DAxBFJiO38m470_Ju4s_rX3-LN6ZLB7ZfZvlL43hPdG8fad3mEOCbpIh5HZwNiMwFzLQNHl4lQJgaeVG5mbLETee6zIBFS57IIaE23CU0NhT0XP5lq2bBF6csi5Oxn1AxZCDEICd3t9WtlgM3y-hqZWNorlebKx2Cq5OYFwIe4X6H4lrh3kxsrNsdWvd7KlGspAJ8mK03sE-ehvbTY"/>
+</div>
+</div>
+<div class="space-y-6">
+<div class="rounded-3xl overflow-hidden aspect-[3/4]">
+<img class="w-full h-full object-cover" data-alt="wide shot of a clean modern bakery interior with minimalist shelves and warm wooden accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQ8UB37K7CzsKeJAOcs5XRrnEmp2nT8_Bir4AdiFvuXerX0k9TOpnBe6dfD0linuhVnK1xBUPAIyDNOpd29Mvvv7kgq40DV2IkCtzl-DQteDyoK2kXrsY3nh8EHexdF8o6IK7pgT62EKvF0KZ1bcFzUBH9RPv0fwRf8kpAZdQ_MUvMopP5aKxrZXM1eVnAZnbeVNTjR6YN8mSiACWDRolqCh-6e2HAC6om8KQVsB-0EGqWBGMQK7OPRBE3mOa98rrIAI6yoE-qoms"/>
+</div>
+<div class="rounded-3xl overflow-hidden aspect-square">
+<img class="w-full h-full object-cover" data-alt="close-up detail of artisanal cupcakes with delicate frosting in soft neutral tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgEFUbQvNjyfTHKQ7srZ272vtIjRZ87xj3r8SbRYgQ-XwQf-g5qGK0kIRzRKrnQO0J2ob5AhQgMdO1isw456sh6tu59oGXq7JflKhMy7XHS0xkAkSEZYIWg39eM1n7iKkdRGyRjlxFy-8mB8I7B6n4SDfaEafQlrjTP4TDyt284CB1tF2AeNBKczKgSMXR9GRu9Ag_rY4qfpgpz4WjS6mMXZbuZcdDLVdf7YowUWoGU_VrUdpKUlemahjAHWVXIMgYXekydqqBzz4"/>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/2 space-y-10">
+<div class="space-y-4">
+<span class="font-k2d text-secondary font-bold tracking-[0.2em] uppercase text-sm block">Our Journey</span>
+<h2 class="text-5xl font-black text-primary leading-tight -tracking-widest">A Legacy of <br/>Retail Excellence.</h2>
+</div>
+<div class="space-y-6 text-lg text-tertiary leading-relaxed">
+<p>For decades, Alfaysal has been more than just a name; it has been a promise of consistency and taste. What began as a humble kitchen experiment has evolved into a leading retail presence, serving communities with pride.</p>
+<p>Our team of master bakers and retail specialists work in harmony to ensure that every Alfaysal product—from our signature snacks to our seasonal favorites—meets the highest standards of the artisanal archive.</p>
+</div>
+<div class="flex gap-12">
+<div>
+<span class="text-4xl font-black text-secondary block">40+</span>
+<span class="text-sm font-bold uppercase tracking-wider text-tertiary opacity-60">Years Heritage</span>
+</div>
+<div>
+<span class="text-4xl font-black text-secondary block">100%</span>
+<span class="text-sm font-bold uppercase tracking-wider text-tertiary opacity-60">Handpicked Quality</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 bg-surface-container-highest">
+<div class="max-w-7xl mx-auto px-8 text-center space-y-12">
+<h2 class="text-5xl font-black text-primary -tracking-widest">Experience the Craft</h2>
+<div class="flex flex-wrap justify-center gap-4">
+<button class="bg-primary text-white px-10 py-5 rounded-full font-bold text-lg style_universal_hover editorial-shadow">View Our Collection</button>
+<button class="bg-surface text-primary px-10 py-5 rounded-full font-bold text-lg style_universal_hover border border-primary/10">Find a Stockist</button>
+</div>
+</div>
+</section>
+</main>
+<footer class="w-full rounded-t-[2rem] bg-[#FDF9F0] dark:bg-[#402000]">
+<div class="max-w-7xl mx-auto px-8 py-16 grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="space-y-6">
+<div class="flex items-center gap-3">
+<img alt="Alfaysal Logo" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvO0qkGz3PAoHU9ltDgif-byqjtu8V-HoqMKkhkuFquLAje2GX-U1PFu4At-FJWU2VtzopXbP0PxzVhv4my_xS_RNWk1fB4vIr-TaW5oe45-nHUvF2-3bpuvGMs3SXsqn0xLXujxx0Y-UR66Ny3ChYtqq2_-btbDYR3Rm_L32NSDuUTrg-ZiD2ef1XnC1B5_Hnft8j_qtJCfI9ZnPyt_fy33JXCykuQZdJ7R1CDzBzSeZigCOOex4Dy1MrqPWFH_rmN5gR0-ubVdA"/>
+<span class="text-xl font-bold text-[#141779] font-k2d">Alfaysal</span>
+</div>
+<p class="font-k2d body-lg text-[#402000] dark:text-[#FDF9F0] max-w-sm">
+                    Dedicated to the art of the bite. Premium snacks crafted with heritage and a passion for excellence.
+                </p>
+<p class="text-sm text-[#402000]/70 dark:text-[#FDF9F0]/70 font-k2d">
+                    © 2024 Alfaysal Bakery. All Rights Reserved.
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="space-y-4">
+<h4 class="font-bold text-primary dark:text-secondary uppercase tracking-widest text-xs">Explore</h4>
+<ul class="space-y-2">
+<li><a class="text-[#402000]/70 dark:text-[#FDF9F0]/70 hover:text-[#BB0013] transition-colors font-k2d" href="#">The Archive</a></li>
+<li><a class="text-[#402000]/70 dark:text-[#FDF9F0]/70 hover:text-[#BB0013] transition-colors font-k2d" href="#">Our Craft</a></li>
+<li><a class="text-[#402000]/70 dark:text-[#FDF9F0]/70 hover:text-[#BB0013] transition-colors font-k2d" href="#">Stockists</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-primary dark:text-secondary uppercase tracking-widest text-xs">Legal</h4>
+<ul class="space-y-2">
+<li><a class="text-[#402000]/70 dark:text-[#FDF9F0]/70 hover:text-[#BB0013] transition-colors font-k2d" href="#">Privacy</a></li>
+<li><a class="text-[#402000]/70 dark:text-[#FDF9F0]/70 hover:text-[#BB0013] transition-colors font-k2d" href="#">Terms</a></li>
+<li><a class="text-[#402000]/70 dark:text-[#FDF9F0]/70 hover:text-[#BB0013] transition-colors font-k2d" href="#">Accessibility</a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

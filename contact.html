@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Al Faysal</title>
+  <link rel="icon" href="favicon.png" />
+  <meta name="description" content="Get in touch with Al Faysal for wholesale, distribution, media, or general inquiries." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" />
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar" role="banner">
+    <div class="container">
+      <div class="announcement-messages">
+        <p class="announcement-msg active"
+           data-en="✦ Premium baked snacks, crafted with heritage since 1991 ✦"
+           data-ar="✦ مخبوزات فاخرة، تصنع بإرث منذ عام 1991 ✦">
+          ✦ Premium baked snacks, crafted with heritage since 1991 ✦
+        </p>
+      </div>
+      <button class="announcement-close" aria-label="Close announcement">✕</button>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Al Faysal Home">
+        <img src="Al Faysal Logo.png" alt="Al Faysal" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-en="Home" data-ar="الرئيسية">Home</a></li>
+        <li><a href="products.html" data-en="Products" data-ar="المنتجات">Products</a></li>
+        <li><a href="our-story.html" data-en="Our Story" data-ar="قصتنا">Our Story</a></li>
+        <li><a href="media.html" data-en="Media" data-ar="الإعلام">Media</a></li>
+        <li><a href="contact.html" data-en="Contact" data-ar="تواصل معنا">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="lang-toggle" aria-label="Switch to Arabic">عربي</button>
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="drawer-overlay" aria-hidden="true"></div>
+  <aside class="mobile-drawer" aria-label="Mobile navigation">
+    <div class="drawer-header">
+      <a href="index.html"><img src="Al Faysal Logo.png" alt="Al Faysal" style="height:40px;" /></a>
+      <button class="drawer-close" aria-label="Close menu">✕</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" data-en="Home" data-ar="الرئيسية">Home</a></li>
+      <li><a href="products.html" data-en="Products" data-ar="المنتجات">Products</a></li>
+      <li><a href="our-story.html" data-en="Our Story" data-ar="قصتنا">Our Story</a></li>
+      <li><a href="media.html" data-en="Media" data-ar="الإعلام">Media</a></li>
+      <li><a href="contact.html" data-en="Contact" data-ar="تواصل معنا">Contact</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <button class="lang-toggle btn btn-primary" style="width:100%;justify-content:center;">AR</button>
+    </div>
+  </aside>
+
+  <main>
+
+    <!-- Page Header -->
+    <header class="page-header">
+      <div class="container">
+        <p class="section-eyebrow" data-en="We'd Love to Hear From You" data-ar="يسعدنا التواصل معك">We'd Love to Hear From You</p>
+        <h1 class="display-lg" data-en="Let's Connect" data-ar="لنتواصل">Let's Connect</h1>
+        <p data-en="Whether you're interested in wholesale, distribution partnerships, or just have a question — we're here."
+           data-ar="سواء كنت مهتمًا بالجملة أو شراكات التوزيع أو لديك سؤال فحسب — نحن هنا.">
+          Whether you're interested in wholesale, distribution partnerships, or just have a question — we're here.
+        </p>
+      </div>
+    </header>
+
+    <!-- Contact Form & Info -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Form -->
+          <div class="contact-form-wrap">
+            <h2 data-en="Send Us a Message" data-ar="أرسل لنا رسالة">Send Us a Message</h2>
+            <p data-en="Fill in the form and we'll get back to you within 1–2 business days."
+               data-ar="أكمل النموذج وسنرد عليك خلال 1–2 أيام عمل.">
+              Fill in the form and we'll get back to you within 1–2 business days.
+            </p>
+
+            <form id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="fullName"
+                         data-en="Full Name" data-ar="الاسم الكامل">Full Name</label>
+                  <input type="text" id="fullName" name="fullName" class="form-input"
+                         placeholder="Your full name"
+                         data-en="Your full name" data-ar="اسمك الكامل"
+                         required aria-required="true" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="email"
+                         data-en="Email Address" data-ar="البريد الإلكتروني">Email Address</label>
+                  <input type="email" id="email" name="email" class="form-input"
+                         placeholder="your@email.com"
+                         required aria-required="true" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="phone">
+                    <span data-en="Phone" data-ar="الهاتف">Phone</span>
+                    <span class="form-optional" data-en="(optional)" data-ar="(اختياري)">(optional)</span>
+                  </label>
+                  <input type="tel" id="phone" name="phone" class="form-input"
+                         placeholder="+965 24739900"
+                         data-en="+965 24739900" data-ar="+965 24739900" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="inquiryType"
+                         data-en="Inquiry Type" data-ar="نوع الاستفسار">Inquiry Type</label>
+                  <select id="inquiryType" name="inquiryType" class="form-select" required>
+                    <option value="" data-en="Select a topic…" data-ar="اختر موضوعًا…">Select a topic…</option>
+                    <option value="general" data-en="General" data-ar="عام">General</option>
+                    <option value="wholesale" data-en="Wholesale" data-ar="الجملة">Wholesale</option>
+                    <option value="distribution" data-en="Distribution" data-ar="التوزيع">Distribution</option>
+                    <option value="media" data-en="Media" data-ar="الإعلام">Media</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="message"
+                       data-en="Message" data-ar="الرسالة">Message</label>
+                <textarea id="message" name="message" class="form-textarea"
+                          placeholder="Tell us how we can help…"
+                          data-en="Tell us how we can help…"
+                          data-ar="أخبرنا كيف يمكننا المساعدة…"
+                          required aria-required="true"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary"
+                      data-en="Send Message" data-ar="إرسال الرسالة">Send Message</button>
+
+              <div id="formFeedback" style="margin-top:1rem;display:none;padding:1rem;border-radius:0.75rem;background:var(--surface-mid);"></div>
+            </form>
+          </div>
+
+          <!-- Info Card -->
+          <div>
+            <div class="contact-info-card">
+              <h3 data-en="Contact Information" data-ar="معلومات الاتصال">Contact Information</h3>
+
+              <div class="contact-info-item">
+                <div class="contact-info-icon">✉</div>
+                <div class="contact-info-content">
+                  <strong data-en="Email" data-ar="البريد الإلكتروني">Email</strong>
+                  <a href="mailto:info@alfaysalgroup.com">info@alfaysalgroup.com</a>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-info-icon">☎</div>
+                <div class="contact-info-content">
+                  <strong data-en="Phone" data-ar="الهاتف">Phone</strong>
+                  <a href="tel:+96524739900">+965 24739900</a>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-info-icon">⚑</div>
+                <div class="contact-info-content">
+                  <strong data-en="Headquarters" data-ar="المقر الرئيسي">Headquarters</strong>
+                  <span data-en="P.O. Box 54144 Code No. 85862, Kuwait" data-ar="ص.ب. 54144 رمز 85862، الكويت">P.O. Box 54144 Code No. 85862, Kuwait</span>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-info-icon">🕐</div>
+                <div class="contact-info-content">
+                  <strong data-en="Business Hours" data-ar="ساعات العمل">Business Hours</strong>
+                  <span data-en="Sun – Thu, 8am – 6pm" data-ar="الأحد – الخميس، 8 ص – 6 م">Sun – Thu, 8am – 6pm</span>
+                </div>
+              </div>
+
+              <div class="contact-socials">
+                <a href="https://www.instagram.com/alfaysalbakery" class="social-link social-link--instagram" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section class="map-section" aria-label="Location map">
+      <div class="map-embed">
+        <iframe
+          src="https://maps.google.com/maps?q=29.22649778988073,48.00314677116384&output=embed&z=16"
+          width="100%" height="100%" style="border:0;" allowfullscreen=""
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Al Faysal HQ — Kuwait"></iframe>
+        <a href="https://maps.app.goo.gl/N12vX25ctFk4UaFv6" target="_blank" rel="noopener noreferrer"
+           class="map-link-overlay" aria-label="Open in Google Maps">
+          <span>View on Google Maps ↗</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="Al Faysal Logo.png" alt="Al Faysal" />
+          <p class="footer-tagline"
+             data-en="Baking premium snacks with love and tradition since 1991."
+             data-ar="نخبز وجبات خفيفة فاخرة بحب وتقليد منذ عام 1991.">
+            Baking premium snacks with love and tradition since 1991.
+          </p>
+          <div class="footer-socials" style="margin-top:1.5rem;">
+            <a href="https://www.instagram.com/alfaysalbakery" class="social-link social-link--instagram" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>          </div>
+        </div>
+        <div>
+          <p class="footer-heading" data-en="Quick Links" data-ar="روابط سريعة">Quick Links</p>
+          <ul class="footer-links">
+            <li><a href="index.html" data-en="Home" data-ar="الرئيسية">Home</a></li>
+            <li><a href="products.html" data-en="Products" data-ar="المنتجات">Products</a></li>
+            <li><a href="our-story.html" data-en="Our Story" data-ar="قصتنا">Our Story</a></li>
+            <li><a href="media.html" data-en="Media" data-ar="الإعلام">Media</a></li>
+            <li><a href="contact.html" data-en="Contact" data-ar="تواصل معنا">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading" data-en="Categories" data-ar="الفئات">Categories</p>
+          <ul class="footer-links">
+            <li><a href="products.html?category=pizza">Pizza</a></li>
+            <li><a href="products.html?category=fatayer">Fatayer</a></li>
+            <li><a href="products.html?category=croissant">Croissant</a></li>
+            <li><a href="products.html?category=cupcake">Cupcake</a></li>
+            <li><a href="products.html?category=tasbeera">Tasbeera</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading" data-en="Get In Touch" data-ar="تواصل معنا">Get In Touch</p>
+          <div class="footer-contact-item"><span class="footer-contact-icon">✉</span><span>info@alfaysalgroup.com</span></div>
+          <div class="footer-contact-item"><span class="footer-contact-icon">☎</span><span>+965 24739900</span></div>
+          <div class="footer-contact-item"><span class="footer-contact-icon">⚑</span><span data-en="Kuwait" data-ar="الكويت">Kuwait</span></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy" data-en="Copyright @ 2026, Al Faysal Bakery &amp; Sweets Company W.L.L. | All Rights Reserved." data-ar="حقوق النشر @ 2026، شركة الفيصل للمخابز والحلويات ش.ذ.م.م. | جميع الحقوق محفوظة.">Copyright @ 2026, Al Faysal Bakery &amp; Sweets Company W.L.L. | All Rights Reserved.</p>
+        <div class="footer-agthia"><img src="Agthia_group_footer.svg" alt="Agthia Group" /></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Simple form submit handler
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.getElementById('contactForm');
+      const feedback = document.getElementById('formFeedback');
+      if (!form) return;
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const lang = document.documentElement.lang || 'en';
+        feedback.style.display = 'block';
+        feedback.textContent = lang === 'ar'
+          ? 'شكرًا لك! تم استلام رسالتك وسنرد عليك قريبًا.'
+          : 'Thank you! Your message has been received. We\'ll be in touch soon.';
+        feedback.style.color = 'var(--primary)';
+        form.reset();
+      });
+    });
+  </script>
+</body>
+</html>
