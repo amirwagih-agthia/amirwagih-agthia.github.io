@@ -214,11 +214,16 @@
               <!-- Info -->
               <div class="product-detail-body">
                 <span class="chip chip-primary" data-en="${catEn}" data-ar="${catAr}">${catDisplay}</span>
-                <h1 class="product-detail-name" data-en="${product.name}" data-ar="${product.nameAr}">${name}</h1>
+                <h1 class="product-detail-name" data-en="${product.name}" data-ar="${product.nameAr}">${name}${product.weight ? `<span style="font-size:0.55em;font-weight:400;opacity:0.45;margin-left:0.5rem;">${product.weight}</span>` : ''}</h1>
                 <div class="product-divider"></div>
 
                 <h3 data-en="About This Product" data-ar="عن هذا المنتج">${lang === 'ar' ? 'عن هذا المنتج' : 'About This Product'}</h3>
                 <p class="product-description" data-en="${product.description}" data-ar="${product.descriptionAr}">${desc}</p>
+
+                ${product.bullets && product.bullets.length > 0 ? `
+                <ul style="margin:1rem 0 1.5rem;padding:0;list-style:none;display:flex;flex-direction:column;gap:0.5rem;">
+                  ${product.bullets.map(b => `<li style="display:flex;align-items:flex-start;gap:0.6rem;font-size:0.95rem;color:rgba(28,28,23,0.7);"><span style="color:var(--secondary);flex-shrink:0;margin-top:0.1em;">✦</span>${b}</li>`).join('')}
+                </ul>` : ''}
 
                 ${variants.length > 0 ? `
                   <h3 data-en="Available Variants" data-ar="الأحجام المتاحة">${lang === 'ar' ? 'الأحجام المتاحة' : 'Available Variants'}</h3>
